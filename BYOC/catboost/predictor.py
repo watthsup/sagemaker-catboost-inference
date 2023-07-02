@@ -30,11 +30,6 @@ class ScoringService(object):
     def get_model(cls):
         """Get the model object for this instance, loading it if it's not already loaded."""
         if cls.model == None:
-            print("CURRENT PATH ",os.getcwd())
-            print(os.listdir(model_path))
-            #t = tarfile.open(os.path.join(model_path, 'model.tar.gz'), 'r:gz')
-            #t.extractall()
-
             file_path = os.path.join(model_path, "model")
             model = CatBoostClassifier()
             cls.model = model.load_model(file_path)
