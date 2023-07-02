@@ -4,7 +4,7 @@ This repository contains three different implementations of using CatBoost for i
 ## 1. BYOC (Bring Your Own Container)
 The BYOC subfolder contains an implementation that leverages the BYOC functionality of SageMaker. It allows you to use a custom container to run your CatBoost inference on SageMaker. This approach gives you more flexibility and control over the inference environment.
 
-## 2. PyTorch-based Approach
+## 2. PyTorch-based image Approach
 The pytorch-base subfolder contains an implementation that integrates CatBoost with PyTorch for inference on SageMaker. This approach leverages the PyTorch framework and provides seamless integration with CatBoost, enabling you to utilize the benefits of both frameworks in your inference workflow.
 
 ## 3. Tricky Approach
