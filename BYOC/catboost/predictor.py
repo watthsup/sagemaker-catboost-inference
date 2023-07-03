@@ -42,7 +42,7 @@ class ScoringService(object):
             input (a pandas dataframe): The data on which to do the predictions. There will be
                 one prediction per row in the dataframe"""
         clf = cls.get_model()
-        model_output = clf.predict(input)
+        model_output = clf.predict(input, prediction_type="Probability")
         predicted_label = np.argmax(model_output, axis=1)
         return predicted_label
 
